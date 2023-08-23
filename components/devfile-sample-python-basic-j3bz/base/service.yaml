@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: devfile-sample-python-basic-j3bz
     app.kubernetes.io/part-of: test-app-70
   name: devfile-sample-python-basic-j3bz
-  namespace: lpardo-tenant
 spec:
   ports:
   - port: 8081

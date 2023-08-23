@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: devfile-sample-python-basic-j3bz
     app.kubernetes.io/part-of: test-app-70
   name: devfile-sample-python-basic-j3bz
-  namespace: lpardo-tenant
 spec:
   replicas: 1
   revisionHistoryLimit: 0
@@ -26,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-j3bz
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/test-app-70/devfile-sample-python-basic-j3bz@sha256:bb04ff3f03bc10c7d79dc1df217bcd924df7100833802501e5ef83ec8b62fd2c
         name: my-python
         ports:
         - containerPort: 8081
