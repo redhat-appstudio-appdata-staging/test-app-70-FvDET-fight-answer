@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-j3bz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/test-app-70/devfile-sample-python-basic-j3bz@sha256:bb04ff3f03bc10c7d79dc1df217bcd924df7100833802501e5ef83ec8b62fd2c
+        name: my-python
+        resources: {}
+status: {}
